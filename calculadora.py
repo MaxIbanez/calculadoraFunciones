@@ -1,8 +1,13 @@
+	#INT = es un numero entero
+	#STR = es una palabra o letra o numero (no tiene valor matematico)
+	#FLOAT = es un decimal
+	#BOOL = es un valor binario (True, False)
+
 def Suma(listaSum):
 	total = 0
 	indice = 0
 	while(indice < len(listaSum)):		
-		total = total + lista[indice]
+		total = total + listaSum[indice]
 		indice+=1
 	print (total)
 
@@ -10,12 +15,9 @@ def Resta(listaRest):
 	total = 0
 	indice = 0
 	while(indice < len(listaRest)):
-		total = total - lista[indice]
+		total = total - listaRest[indice]
 		indice+=1
 	print (total)
-
-
-
 
 def Division(div1,div2):
 	divi = div1/div2
@@ -46,6 +48,8 @@ def calculadora():
 	n1 = 0
 	n2 = 0
 	lista = []
+
+	
 	print("BIENVENIDO a la calculadora")
 	print("1) calcular Potencia entre 2 numeros")
 	print("2) calcular raiz cuadrada de un numero") 
@@ -54,7 +58,7 @@ def calculadora():
 	print("5) Dividir 2 numeros")
 	print("6) Restar numeros") 
 	print("7) Sumar numeros")
-	print ("Que accion desea hacer? (elegir etre 1 y 7) \n-> ")
+	print ("Que accion desea hacer? (elegir etre 1 y 7) -> ")
 
 	opcion = int(input())
 
@@ -95,10 +99,11 @@ def calculadora():
 
 		while contador < maximo:
 			numero = int(input("Ingrese numeros: "))
+			print (lista)
 			lista.append(numero)
 			contador+=1
-
-		Suma(lista)
+		Resta(lista)
+		
 		lista = []
 	elif opcion == 7:
 		maximo = int(input("Cuantos numeros desea Restar?: "))
@@ -110,42 +115,9 @@ def calculadora():
 			numero = int(input("Ingrese numeros: "))
 			lista.append(numero)
 			contador+=1
-		Resta(lista)
+		Suma(lista)
 		lista = []
 	else:
 		print ("La opcion elegida no existe, ejecutar programa nuevamente.")
 
-
-	
-	#INT = es un numero entero
-	#STR = es una palabra o letra o numero (no tiene valor matematico)
-	#FLOAT = es un decimal
-	#BOOL = es un valor binario (True, False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	Potencia(n1,n2)
-
-	Raiz(n1)
-
-	Porcentaje(n1,n2) 
-
-	Multiplicar(n1,n2)
-
-	Division(n1,n2)
-
-	Resta(ejemplo)
-
-	Suma(ejemplo)
+calculadora()
