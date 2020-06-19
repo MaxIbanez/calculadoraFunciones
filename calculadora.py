@@ -92,7 +92,7 @@ def calculadora():
 		n1,n2 = 0,0
 	elif opcion == 6:
 
-		maximo = int(input("Cuantos numeros desea sumar?: "))
+		maximo = int(input("Cuantos numeros desea restar?: "))
 		contador = 0
 		#[0,1,2,3,4,5,6...,n-1]
 
@@ -106,7 +106,7 @@ def calculadora():
 		
 		lista = []
 	elif opcion == 7:
-		maximo = int(input("Cuantos numeros desea Restar?: "))
+		maximo = int(input("Cuantos numeros desea sumar?: "))
 		contador = 0
 		#[0,1,2,3,4,5,6...,n-1]
 
